@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    price DOUBLE NOT NULL,
+    side CHAR(1) NOT NULL,
+    size BIGINT NOT NULL,
+    created_date TIMESTAMP DEFAULT now(),
+    PRIMARY KEY(id)
+);
